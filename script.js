@@ -17,10 +17,12 @@ function calculationTriangleArea() {
   if (isNaN(base) || isNaN(height)) {
     setArea.innerText = "Input a Number";
     newLine.innerHTML = "Input a Number";
+    newLine.style.color = "red";
   } else {
     const area = 0.5 * base * height;
     setArea.innerText = area;
     newLine.innerHTML = "Area of Triangle is: " + area;
+    newLine.style.color = "green";
   }
   return area;
 }
@@ -38,14 +40,13 @@ function calculationRectangleArea() {
   if (isNaN(width) || isNaN(length)) {
     setArea.innerText = "Input a Number";
     newLine.innerHTML = "Input a Number";
+    newLine.style.color = "red";
   } else {
     const area = width * length;
     setArea.innerText = area;
     newLine.innerHTML = "Area of Rectangle is: " + area;
+    newLine.style.color = "green";
   }
-
-  // const area = width * length;
-  // setArea.innerText = area;
   return area;
 }
 
@@ -62,14 +63,13 @@ function calculationParallelogramArea() {
   if (isNaN(base) || isNaN(height)) {
     setArea.innerText = "Input a Number";
     newLine.innerHTML = "Input a Number";
+    newLine.style.color = "red";
   } else {
     const area = base * height;
     setArea.innerText = area;
     newLine.innerHTML = "Area of Parallelogram is: " + area;
+    newLine.style.color = "green";
   }
-
-  // const area = base * height;
-  // setArea.innerText = area;
   return area;
 }
 
@@ -86,14 +86,14 @@ function calculationRhombusArea() {
   if (isNaN(daimention1) || isNaN(daimention2)) {
     setArea.innerText = "Input a Number";
     newLine.innerHTML = "Input a Number";
+    newLine.style.color = "red";
   } else {
     const area = 0.5 * daimention1 * daimention2;
     setArea.innerText = area;
     newLine.innerHTML = "Area of Rhombus is: " + area;
+    newLine.style.color = "green";
   }
 
-  // const area = 0.5 * daimention1 * daimention2;
-  // setArea.innerText = area;
   return area;
 }
 
@@ -109,14 +109,13 @@ function calculationPentagonArea() {
   if (isNaN(input1) || isNaN(input2)) {
     setArea.innerText = "Input a Number";
     newLine.innerHTML = "Input a Number";
+    newLine.style.color = "red";
   } else {
     const area = 0.5 * input1 * input2;
     setArea.innerText = area;
     newLine.innerHTML = "Area of Pentagon is: " + area;
+    newLine.style.color = "green";
   }
-
-  // const area = 0.5 * input1 * input2;
-  // setArea.innerText = area;
   return area;
 }
 
@@ -133,13 +132,12 @@ function calculationEllipseArea() {
   if (isNaN(major) || isNaN(minor)) {
     setArea.innerText = "Input a Number";
     newLine.innerHTML = "Input a Number";
+    newLine.style.color = "red";
   } else {
     const area = (pi * major * minor).toFixed(2);
     setArea.innerText = area;
     newLine.innerHTML = "Area of Ellipse is: " + area;
+    newLine.style.color = "green";
   }
-
-  // const area = (pi * major * minor).toFixed(2);
-  // setArea.innerText = area;
   return area;
 }
